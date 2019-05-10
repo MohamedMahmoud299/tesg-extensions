@@ -1,0 +1,50 @@
+.resp-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.resp-iframe {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  /* CSS goes here */
+
+  .resp-container-ipad {
+    position: relative;
+    overflow: hidden;
+    padding-top: 100%;
+  }
+
+  .resp-iframe-ipad {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    width: 60%;
+    height: 90%;
+    border: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .resp-container-iphone {
+    position: relative;
+    overflow: hidden;
+    padding-top: 120%;
+  }
+
+  .resp-iframe-iphone {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 90%;
+    border: 0;
+  }
+}
