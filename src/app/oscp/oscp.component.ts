@@ -20,6 +20,7 @@ export class OscpComponent implements OnInit {
       let utmMedium = params.get('utm_medium');
       let utmCampaign = params.get('utm_campaign');
       let jobId = params.get('job');
+      let hideHeader = true;
       let paramsArr = [{
         key: 'utm_source', value: utmSource
       }, {
@@ -42,6 +43,13 @@ export class OscpComponent implements OnInit {
         }
 
       });
+      if (!this.iframeUrl.includes('?')) {
+        this.iframeUrl += '?';
+        this.iframeUrl += 'hideHeader=' + hideHeader;
+      } else {
+        this.iframeUrl += '&hideHeader=' + hideHeader;
+      }
+
       console.log('iframurl ', this.iframeUrl);
     });
   }
