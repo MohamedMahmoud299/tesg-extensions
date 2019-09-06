@@ -207,7 +207,7 @@ var OscpComponent = /** @class */ (function () {
     function OscpComponent(route, domSanitizer) {
         this.route = route;
         this.domSanitizer = domSanitizer;
-        this.iframeUrl = 'https://tesg-oscp.s3.amazonaws.com/jobs';
+        this.iframeUrl = 'https://tesg-oscp.s3.amazonaws.com/index.html#/jobs';
     }
     OscpComponent.prototype.ngOnInit = function () {
         var _this = this;
