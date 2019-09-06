@@ -207,7 +207,7 @@ var OscpComponent = /** @class */ (function () {
     function OscpComponent(route, domSanitizer) {
         this.route = route;
         this.domSanitizer = domSanitizer;
-        this.iframeUrl = 'https://tesg-oscp.s3.amazonaws.com/index.html#/jobs';
+        this.iframeUrl = 'https://tesg-oscp.s3.amazonaws.com/jobs';
     }
     OscpComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -216,7 +216,7 @@ var OscpComponent = /** @class */ (function () {
             var utmMedium = params.get('utm_medium');
             var utmCampaign = params.get('utm_campaign');
             var jobId = params.get('job');
-            var hideHeader = true;
+            var hideHeader = 'true';
             var paramsArr = [{
                     key: 'utm_source', value: utmSource
                 }, {
