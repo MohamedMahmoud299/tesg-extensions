@@ -9,7 +9,7 @@ import {DomSanitizer} from '@angular/platform-browser';
 })
 export class OscpComponent implements OnInit {
 
-  public iframeUrl = 'https://tesg-oscp.s3.amazonaws.com/index.html#/jobs';
+  public iframeUrl = 'https://tesg-oscp.newburyapps.com/jobs';
 
   constructor(private route: ActivatedRoute, public domSanitizer: DomSanitizer) {
   }
@@ -20,7 +20,7 @@ export class OscpComponent implements OnInit {
       let utmMedium = params.get('utm_medium');
       let utmCampaign = params.get('utm_campaign');
       let jobId = params.get('job');
-      let hideHeader = true;
+      let hideHeader = 'true';
       let paramsArr = [{
         key: 'utm_source', value: utmSource
       }, {
